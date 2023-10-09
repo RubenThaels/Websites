@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            background-color: blue;
+            row-gap: 3rem;
+            column-gap: 1rem;
+            padding 1rem;
+        }
+        .grid-container > div {
+            padding: 1rem;
+            background-color: antiquewhite;
+        }
+
+        @media (width < 600px) {
+            .grid-container {
+                grid-auto-flow: row;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div><img src="lance.png" alt="">
+            <p>You've been Lance'd</p>
+        </div>
+    </div>
+
+    <div class="grid-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>

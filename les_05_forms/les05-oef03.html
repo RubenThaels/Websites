@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        fieldset label {
+            font-size: 12px;
+            text-align: left;
+        }
+        form {
+            width: 25%;
+        }
+        legend {
+            background-color: maroon;
+            color: white;
+            padding: 5px;
+            }
+        fieldset, #submit {
+            background-color: #f2f2f2;
+            padding: 5px;
+            }
+    </style>
+</head>
+<body>
+    <form action="https://tm-statweb.be/forms.php" method="post">
+        <fieldset>
+            <legend>Geslacht</legend>
+            <label for="Man">Man</label>
+            <input type="radio" name="Geslacht" id="Man" value="Man">
+            <label for="Vrouw">Vrouw</label>
+            <input type="radio" name="Geslacht" id="Vrouw" value="Vrouw">
+            <label for="Ander">Andere</label>
+            <input type="radio" name="Geslacht" id="Ander" value="Ander">
+        </fieldset>
+        <fieldset>
+            <legend>Kleur</legend>
+            <label for="Man">Rood</label>
+            <input type="radio" name="Kleur" id="Rood" value="Rood">
+            <label for="Vrouw">Geel</label>
+            <input type="radio" name="Kleur" id="Geel" value="Geel">
+            <label for="Ander">Blauw</label>
+            <input type="radio" name="Kleur" id="Blauw" value="Blauw">
+        </fieldset>
+        <input type="submit" value="Registeren">
+    </form>
+</body>
+</html>
